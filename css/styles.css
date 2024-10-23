@@ -634,7 +634,7 @@ img {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  transition: opasicy 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -667,17 +667,40 @@ img {
 
 .modal-exit {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 24px;
+  right: 24px;
+  width: 24px;
+  height: 24px;
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: #e7e9fc;
-  margin-top: 24px;
-  margin-right: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-exit:hover {
+  background-color: #404bbf;
+  border: none;
+}
+
+.modal-exit:focus {
+  background-color: #404bbf;
+  border: none;
 }
 
 .modal-exit-icon {
   fill: #2e2f42;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-exit:hover .modal-exit-icon,
+.modal-exit:focus .modal-exit-icon {
+  fill: #ffffff;
 }
 
 .modal-title {
@@ -689,8 +712,7 @@ img {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
-  margin-top: 72px;
-  margin-left: auto;
+  margin-bottom: 16px;
 }
 
 .input-box {
@@ -701,10 +723,11 @@ img {
 .modal-lable {
   font-weight: 400;
   font-size: 12px;
-  line-height: 1.16;
+  line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
   margin-bottom: 4px;
+  display: block;
 }
 
 .input-icon-wrap {
@@ -721,6 +744,15 @@ img {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.modal-input:focus {
+  border-color: #4d5ae5;
+}
+
+.modal-input:focus + .modal-icon use {
+  stroke: none;
+  fill: #4d5ae5;
+}
+
 .modal-icon {
   position: absolute;
   left: 16px;
@@ -729,7 +761,7 @@ img {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.textarea-comment-wrap {
+.modal-icon .textarea-comment-wrap {
   margin-bottom: 16px;
 }
 
@@ -751,11 +783,15 @@ img {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
-  color: #2e2f42;
+  color: rgba(46, 47, 66, 0.4);
   background-color: transparent;
   outline: transparent;
   resize: none;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.textarea-comment:focus {
+  border-color: #4d5ae5;
 }
 
 .textarea-comment::placeholder {

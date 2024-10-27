@@ -35,6 +35,8 @@ img {
   margin: 0 auto;
 }
 
+/* <!-- Header --> */
+
 .header {
   border-bottom: 1px solid #e7e9fc;
   box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08),
@@ -168,6 +170,8 @@ img {
   color: #404bbf;
 }
 
+/* <!-- Section wrapper --> */
+
 .wrapper {
   background: #2e2f42;
   padding: 188px 0;
@@ -223,6 +227,8 @@ img {
   background-color: #404bbf;
 }
 
+/* <!-- Section hero --> */
+
 .hero {
   padding: 120px 0;
 }
@@ -277,6 +283,8 @@ img {
   letter-spacing: 0.02em;
   color: #434455;
 }
+
+/* <!-- Section team --> */
 
 .team {
   background: #f4f4fd;
@@ -368,6 +376,8 @@ img {
   text-align: center;
 }
 
+/* <!-- Section portfolio --> */
+
 .portfolio {
   padding: 120px 0;
 }
@@ -451,6 +461,8 @@ img {
   border: 1px solid #e7e9fc;
   border-top: none;
 }
+
+/* <!-- Footer --> */
 
 .footer {
   background: #2e2f42;
@@ -581,7 +593,6 @@ img {
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   padding: 8px 16px;
   flex-grow: 1;
-  margin-right: 24px;
   background-color: transparent;
   font-size: 12px;
   line-height: 2;
@@ -623,6 +634,8 @@ img {
   fill: #fff;
   margin-left: 16px;
 }
+
+/* <!-- Modal --> */
 
 .backdrop {
   position: fixed;
@@ -718,8 +731,7 @@ img {
 .input-box {
   margin-bottom: 8px;
 }
-.modal-form {
-}
+
 .modal-lable {
   font-weight: 400;
   font-size: 12px;
@@ -799,7 +811,6 @@ img {
 
 .textarea-comment::placeholder {
   color: rgba(46, 47, 66, 0.4);
-  padding: 8px 16px;
 }
 
 .checkbox-container {
